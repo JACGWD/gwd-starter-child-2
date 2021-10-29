@@ -15,6 +15,23 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 /* FONT FACES */
+
+@font-face {
+  font-family: 'Ubuntu Condensed';
+  src: url("fonts/Ubuntu_Condensed/UbuntuCondensed-Regular.woff2")  format("woff2"),
+       url("fonts/Ubuntu_Condensed/UbuntuCondensed-Regular.ttf")  format("ttf");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("fonts/Ubuntu/Ubuntu-Regular.woff2")  format("woff2"),
+       url("fonts/Ubuntu/Ubuntu-Regular.ttf")  format("ttf");
+  font-weight: normal;
+}
+
+
+
 @font-face {
   font-family: 'Titillium Web';
   src: local('Titillium Web Black'), local('TitilliumWeb-Black'),
@@ -178,10 +195,68 @@ h6 {
   font-weight: bold;
 }
 
+ul {list-style-position: inside; list-style-type: none;}
+
+
+ul li::before {
+	display: block;
+	width: 1.5em;
+	position: absolute;
+	left: -1.5em;
+	background-image: url(img/arrow.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 1em;
+	content: " ";
+	top: 0.125em;
+}
+
+
+/* Classic Typographic Scale https://spencermortensen.com/articles/typographic-scale/  */
+
+h1 { font-size: 2em; text-transform: uppercase;}
+h2 { font-size: 1.7411em; text-transform: uppercase;}
+h3 { font-size: 1.5157em; }
+h4 { font-size: 1.3195em; }
+h5 { font-size: 1.1487em; }
+p { font-size: 1em; }
+footer { font-size: .8706em; }
+
+
+/* Typographic Margins & Spacing */
+
+
+h1 {margin-bottom: 2em; }
+h2 {margin: 1.7411em 0 0 1rem; }
+h3 {margin: 1.5157em 0 0 1rem; }
+h4 {margin: 1.3195em 0 0 1rem; }
+h5 {margin: 1.1487em 0 0 1rem; }
+p {margin: 1em 0 0 1em}
+ul, ol {margin: 0.75rem 0 0 2rem; }
+li {margin: 0 0 0 1rem; line-height: 1.5}
+
+h1 + h2, h2 + h3 {0 0 0.75em 1rem;}
+
+ul + p {margin: 1rem 0 1rem 2rem;}
+
+ul + h3 {
+	margin-top: 4.5rem;
+}
+
+h3 + h4 {margin: 0 0 0 1rem;}
+
+h2 + p {
+  margin: 0.75rem 0 1rem 1rem;
+}
+
+body,
 p,
 li,
-a { font-family: sans-serif;
+a { font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: normal;
 }
+
+p { max-width: 70ch;}
 
 /* END DEFAULT STYLES FOR ALL VIEWPORT SIZES */
 
@@ -204,6 +279,8 @@ a { font-family: sans-serif;
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+  main {width: 960px; padding: 1em; border: 1px solid #444; margin: 1em auto;}
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
