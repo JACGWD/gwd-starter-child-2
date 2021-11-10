@@ -167,6 +167,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --main-fg-color: #444;
   --titles-color: #1c0263;
   --bodytext-color: #444444;
+
+  --zelinsky-blue: #274C77;
+  --zelinsky-pale-blue: #6096BA;
+  --zelinsky-palest-blue: #A3CEF1;
+
+
 }
 
 /* END COLOR PALETTE */
@@ -182,6 +188,7 @@ img {max-width: 100%; height: auto;}
 body {
   font-size: 100%;
   font-family: sans-serif;
+  /* background-image: url("img/twitter.svg"); */
 }
 
 h1,
@@ -195,10 +202,10 @@ h6 {
   font-weight: bold;
 }
 
-ul {list-style-position: inside; list-style-type: none;}
+main ul {list-style-position: inside; list-style-type: none;}
 
 
-ul li::before {
+main ul li::before {
 	display: block;
 	width: 1.5em;
 	position: absolute;
@@ -211,6 +218,7 @@ ul li::before {
 	top: 0.125em;
 }
 
+/* ul {list-style-image: url("img/twitter.svg"); }  */
 
 /* Classic Typographic Scale https://spencermortensen.com/articles/typographic-scale/  */
 
@@ -235,7 +243,7 @@ p {margin: 1em 0 0 1em}
 ul, ol {margin: 0.75rem 0 0 2rem; }
 li {margin: 0 0 0 1rem; line-height: 1.5}
 
-h1 + h2, h2 + h3 {0 0 0.75em 1rem;}
+h1 + h2, h2 + h3 {margin: 0 0 0.75em 1rem;}
 
 ul + p {margin: 1rem 0 1rem 2rem;}
 
@@ -257,6 +265,22 @@ a { font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 p { max-width: 70ch;}
+
+header, footer {background-color: var(--zelinsky-blue); color: #ffffff; }
+
+nav ul li a:link {
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+  }
+
+#menu-header-menu {
+	display: flex;
+	flex-direction: row;
+	padding: 0 1em;
+	align-items: flex-end;
+	border: 1px solid red;
+	justify-content: flex-end;
+}
 
 /* END DEFAULT STYLES FOR ALL VIEWPORT SIZES */
 
@@ -280,7 +304,7 @@ p { max-width: 70ch;}
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
-  main {width: 960px; padding: 1em; border: 1px solid #444; margin: 1em auto;}
+  main {width: 960px; padding: 1em;  margin: 1em auto;}
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
