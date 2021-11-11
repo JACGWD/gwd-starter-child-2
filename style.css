@@ -310,6 +310,7 @@ nav ul li a:link {
     grid-template-columns: auto auto;   
     padding: 10px;  
   } 
+
   #menu.primary-menu {
     display: flex;
     flex-direction: row;
