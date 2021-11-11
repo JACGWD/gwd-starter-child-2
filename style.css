@@ -273,14 +273,7 @@ nav ul li a:link {
   text-decoration: none;
   }
 
-#menu-header-menu {
-	display: flex;
-	flex-direction: row;
-	padding: 0 1em;
-	align-items: flex-end;
-	border: 1px solid red;
-	justify-content: flex-end;
-}
+
 
 
 
@@ -317,7 +310,14 @@ nav ul li a:link {
     grid-template-columns: auto auto;   
     padding: 10px;  
   } 
-  
+  #menu.primary-menu {
+    display: flex;
+    flex-direction: row;
+    padding: 0 1em;
+    align-items: flex-end;
+    /* border: 1px solid red; */
+    justify-content: flex-end;
+  }
 
 }
 
