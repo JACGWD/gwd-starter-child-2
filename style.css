@@ -274,7 +274,28 @@ nav ul li a:link {
   }
 
 
+body.highres ul.pagination {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 
+
+   body.highres ul.pagination li {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid red;
+  }
+
+ 
+body.highres ul.pagination li.previous-page {
+    background-image: url("img/left-arrow.svg");
+    background-repeat: no-repeat;
+    border: 1px solid #444;
+  }
 
 
 
