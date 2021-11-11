@@ -282,6 +282,11 @@ nav ul li a:link {
 	justify-content: flex-end;
 }
 
+
+
+
+
+
 /* END DEFAULT STYLES FOR ALL VIEWPORT SIZES */
 
 /* --------------------------------------
@@ -305,6 +310,15 @@ nav ul li a:link {
 @media (min-width: 992px) {
 
   main {width: 960px; padding: 1em;  margin: 1em auto;}
+
+  body.thumbs main {  
+    display: grid;  
+    grid-column-gap: 10px;  
+    grid-template-columns: auto auto;   
+    padding: 10px;  
+  } 
+  
+
 }
 
 /* X-Large devices (large desktops, 1200px and up) */

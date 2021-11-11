@@ -30,8 +30,19 @@ if (!defined('ABSPATH'))
 
 <?php get_search_form(); ?>
 
-<nav>
-        <?php wp_nav_menu( array( 'theme_location' => 'header-menu', 'container_class' => 'primary-nav' ) ); ?>
+<nav class="primary-navigation">
+<button aria-expanded="false" aria-controls="menu" class="hide-text">Menu</button>
+
+<?php
+  wp_nav_menu(array(
+	'menu_class'	  	=> 'primary-menu',
+	'theme_location' 	=> 'primary-menu',
+	'menu_id'	    		=> 'menu',
+  'container'       => 'div',
+	'container_id'		=> 'menu-container',
+  'menu_aria_label' => 'hidden'
+));
+?>
 </nav>
 
 
