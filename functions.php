@@ -19,7 +19,7 @@ function gwdchildtheme_scripts() {
     // enqueue parent styles first
 	wp_enqueue_style('parent-theme', get_template_directory_uri() .'/style.css');
     // add child theme style
-    wp_enqueue_style( 'style-name', get_stylesheet_uri() );
+    wp_enqueue_style( 'child-theme', get_stylesheet_uri() );
 
  
 
