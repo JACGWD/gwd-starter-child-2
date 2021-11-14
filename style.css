@@ -17,148 +17,142 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* FONT FACES */
 
 @font-face {
-  font-family: 'Ubuntu Condensed';
-  src: url("fonts/Ubuntu_Condensed/UbuntuCondensed-Regular.woff2")  format("woff2"),
-       url("fonts/Ubuntu_Condensed/UbuntuCondensed-Regular.ttf")  format("ttf");
+  font-family: "Ubuntu Condensed";
+  src: url("fonts/Ubuntu_Condensed/UbuntuCondensed-Regular.woff2")
+      format("woff2"),
+    url("fonts/Ubuntu_Condensed/UbuntuCondensed-Regular.ttf") format("ttf");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Ubuntu';
-  src: url("fonts/Ubuntu/Ubuntu-Regular.woff2")  format("woff2"),
-       url("fonts/Ubuntu/Ubuntu-Regular.ttf")  format("ttf");
+  font-family: "Ubuntu";
+  src: url("fonts/Ubuntu/Ubuntu-Regular.woff2") format("woff2"),
+    url("fonts/Ubuntu/Ubuntu-Regular.ttf") format("ttf");
   font-weight: normal;
 }
 
-
-
 @font-face {
-  font-family: 'Titillium Web';
-  src: local('Titillium Web Black'), local('TitilliumWeb-Black'),
-     url('fonts/titillium/TitilliumWeb-Black.woff2') format('woff2'),
-     url('fonts/titillium/TitilliumWeb-Black.woff') format('woff'),
-     url('fonts/titillium/TitilliumWeb-Black.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: local("Titillium Web Black"), local("TitilliumWeb-Black"),
+    url("fonts/titillium/TitilliumWeb-Black.woff2") format("woff2"),
+    url("fonts/titillium/TitilliumWeb-Black.woff") format("woff"),
+    url("fonts/titillium/TitilliumWeb-Black.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Titillium Web';
-  src: local('Titillium Web Bold Italic'), local('TitilliumWeb-BoldItalic'),
-     url('fonts/titillium/TitilliumWeb-BoldItalic.woff2') format('woff2'),
-     url('fonts/titillium/TitilliumWeb-BoldItalic.woff') format('woff'),
-     url('fonts/titillium/TitilliumWeb-BoldItalic.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: local("Titillium Web Bold Italic"), local("TitilliumWeb-BoldItalic"),
+    url("fonts/titillium/TitilliumWeb-BoldItalic.woff2") format("woff2"),
+    url("fonts/titillium/TitilliumWeb-BoldItalic.woff") format("woff"),
+    url("fonts/titillium/TitilliumWeb-BoldItalic.ttf") format("truetype");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Titillium Web';
-  src: local('Titillium Web ExtraLight'), local('TitilliumWeb-ExtraLight'),
-     url('fonts/titillium/TitilliumWeb-ExtraLight.woff2') format('woff2'),
-     url('fonts/titillium/TitilliumWeb-ExtraLight.woff') format('woff'),
-     url('fonts/titillium/TitilliumWeb-ExtraLight.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: local("Titillium Web ExtraLight"), local("TitilliumWeb-ExtraLight"),
+    url("fonts/titillium/TitilliumWeb-ExtraLight.woff2") format("woff2"),
+    url("fonts/titillium/TitilliumWeb-ExtraLight.woff") format("woff"),
+    url("fonts/titillium/TitilliumWeb-ExtraLight.ttf") format("truetype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Titillium Web';
-  src: local('Titillium Web Bold'), local('TitilliumWeb-Bold'),
-     url('fonts/titillium/TitilliumWeb-Bold.woff2') format('woff2'),
-     url('fonts/titillium/TitilliumWeb-Bold.woff') format('woff'),
-     url('fonts/titillium/TitilliumWeb-Bold.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: local("Titillium Web Bold"), local("TitilliumWeb-Bold"),
+    url("fonts/titillium/TitilliumWeb-Bold.woff2") format("woff2"),
+    url("fonts/titillium/TitilliumWeb-Bold.woff") format("woff"),
+    url("fonts/titillium/TitilliumWeb-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Titillium Web';
-  src: local('Titillium Web ExtraLight Italic'), local('TitilliumWeb-ExtraLightItalic'),
-     url('fonts/titillium/TitilliumWeb-ExtraLightItalic.woff2') format('woff2'),
-     url('fonts/titillium/TitilliumWeb-ExtraLightItalic.woff') format('woff'),
-     url('fonts/titillium/TitilliumWeb-ExtraLightItalic.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: local("Titillium Web ExtraLight Italic"),
+    local("TitilliumWeb-ExtraLightItalic"),
+    url("fonts/titillium/TitilliumWeb-ExtraLightItalic.woff2") format("woff2"),
+    url("fonts/titillium/TitilliumWeb-ExtraLightItalic.woff") format("woff"),
+    url("fonts/titillium/TitilliumWeb-ExtraLightItalic.ttf") format("truetype");
   font-weight: 200;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Titillium Web';
-  src: local('Titillium Web Regular'), local('TitilliumWeb-Regular'),
-     url('fonts/titillium/TitilliumWeb-Regular.woff2') format('woff2'),
-     url('fonts/titillium/TitilliumWeb-Regular.woff') format('woff'),
-     url('fonts/titillium/TitilliumWeb-Regular.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: local("Titillium Web Regular"), local("TitilliumWeb-Regular"),
+    url("fonts/titillium/TitilliumWeb-Regular.woff2") format("woff2"),
+    url("fonts/titillium/TitilliumWeb-Regular.woff") format("woff"),
+    url("fonts/titillium/TitilliumWeb-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Titillium Web';
-  src: local('Titillium Web Light Italic'), local('TitilliumWeb-LightItalic'),
-     url('fonts/titillium/TitilliumWeb-LightItalic.woff2') format('woff2'),
-     url('fonts/titillium/TitilliumWeb-LightItalic.woff') format('woff'),
-     url('fonts/titillium/TitilliumWeb-LightItalic.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: local("Titillium Web Light Italic"), local("TitilliumWeb-LightItalic"),
+    url("fonts/titillium/TitilliumWeb-LightItalic.woff2") format("woff2"),
+    url("fonts/titillium/TitilliumWeb-LightItalic.woff") format("woff"),
+    url("fonts/titillium/TitilliumWeb-LightItalic.ttf") format("truetype");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Titillium Web';
-  src: local('Titillium Web SemiBold'), local('TitilliumWeb-SemiBold'),
-     url('fonts/titillium/TitilliumWeb-SemiBold.woff2') format('woff2'),
-     url('fonts/titillium/TitilliumWeb-SemiBold.woff') format('woff'),
-     url('fonts/titillium/TitilliumWeb-SemiBold.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: local("Titillium Web SemiBold"), local("TitilliumWeb-SemiBold"),
+    url("fonts/titillium/TitilliumWeb-SemiBold.woff2") format("woff2"),
+    url("fonts/titillium/TitilliumWeb-SemiBold.woff") format("woff"),
+    url("fonts/titillium/TitilliumWeb-SemiBold.ttf") format("truetype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Titillium Web';
-  src: local('Titillium Web Italic'), local('TitilliumWeb-Italic'),
-     url('fonts/titillium/TitilliumWeb-Italic.woff2') format('woff2'),
-     url('fonts/titillium/TitilliumWeb-Italic.woff') format('woff'),
-     url('fonts/titillium/TitilliumWeb-Italic.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: local("Titillium Web Italic"), local("TitilliumWeb-Italic"),
+    url("fonts/titillium/TitilliumWeb-Italic.woff2") format("woff2"),
+    url("fonts/titillium/TitilliumWeb-Italic.woff") format("woff"),
+    url("fonts/titillium/TitilliumWeb-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Titillium Web';
-  src: local('Titillium Web Light'), local('TitilliumWeb-Light'),
-     url('fonts/titillium/TitilliumWeb-Light.woff2') format('woff2'),
-     url('fonts/titillium/TitilliumWeb-Light.woff') format('woff'),
-     url('fonts/titillium/TitilliumWeb-Light.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: local("Titillium Web Light"), local("TitilliumWeb-Light"),
+    url("fonts/titillium/TitilliumWeb-Light.woff2") format("woff2"),
+    url("fonts/titillium/TitilliumWeb-Light.woff") format("woff"),
+    url("fonts/titillium/TitilliumWeb-Light.ttf") format("truetype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Titillium Web';
-  src: local('Titillium Web SemiBold Italic'), local('TitilliumWeb-SemiBoldItalic'),
-     url('fonts/titillium/TitilliumWeb-SemiBoldItalic.woff2') format('woff2'),
-     url('fonts/titillium/TitilliumWeb-SemiBoldItalic.woff') format('woff'),
-     url('fonts/titillium/TitilliumWeb-SemiBoldItalic.ttf') format('truetype');
+  font-family: "Titillium Web";
+  src: local("Titillium Web SemiBold Italic"),
+    local("TitilliumWeb-SemiBoldItalic"),
+    url("fonts/titillium/TitilliumWeb-SemiBoldItalic.woff2") format("woff2"),
+    url("fonts/titillium/TitilliumWeb-SemiBoldItalic.woff") format("woff"),
+    url("fonts/titillium/TitilliumWeb-SemiBoldItalic.ttf") format("truetype");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
-
-
-
-
-
-
-
 
 /* COLOR PALETTE */
 
@@ -168,11 +162,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --titles-color: #1c0263;
   --bodytext-color: #444444;
 
-  --zelinsky-blue: #274C77;
-  --zelinsky-pale-blue: #6096BA;
-  --zelinsky-palest-blue: #A3CEF1;
-
-
+  --zelinsky-blue: #274c77;
+  --zelinsky-pale-blue: #6096ba;
+  --zelinsky-palest-blue: #a3cef1;
 }
 
 /* END COLOR PALETTE */
@@ -180,10 +172,15 @@ Use it to make something cool, have fun, and share what you've learned with othe
 /* DEFAULT STYLES FOR ALL VIEWPORT SIZES */
 /* Extra-Small devices (portrait phones, less than 576px)  */
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-img {max-width: 100%; height: auto;}
-
-.custom-logo {width: 150px; height: 150px;}
+.custom-logo {
+  width: 150px;
+  height: 150px;
+}
 
 body {
   font-size: 100%;
@@ -197,61 +194,104 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Titillium Web', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: var(--titles-color);
   font-weight: bold;
 }
 
-main ul {list-style-position: inside; list-style-type: none;}
-
+main ul {
+  list-style-position: inside;
+  list-style-type: none;
+}
 
 main ul li::before {
-	display: block;
-	width: 1.5em;
-	position: absolute;
-	left: -1.5em;
-	background-image: url(img/arrow.png);
-	background-repeat: no-repeat;
-	background-position: center center;
-	height: 1em;
-	content: " ";
-	top: 0.125em;
+  display: block;
+  width: 1.5em;
+  position: absolute;
+  left: -1.5em;
+  background-image: url(img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 1em;
+  content: " ";
+  top: 0.125em;
 }
+
+main figure img {min-width: 100%; height: auto;}
 
 /* ul {list-style-image: url("img/twitter.svg"); }  */
 
 /* Classic Typographic Scale https://spencermortensen.com/articles/typographic-scale/  */
 
-h1 { font-size: 2em; text-transform: uppercase;}
-h2 { font-size: 1.7411em; text-transform: uppercase;}
-h3 { font-size: 1.5157em; }
-h4 { font-size: 1.3195em; }
-h5 { font-size: 1.1487em; }
-p { font-size: 1em; }
-footer { font-size: .8706em; }
-
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 1.7411em;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1.5157em;
+}
+h4 {
+  font-size: 1.3195em;
+}
+h5 {
+  font-size: 1.1487em;
+}
+p {
+  font-size: 1em;
+}
+footer {
+  font-size: 0.8706em;
+}
 
 /* Typographic Margins & Spacing */
 
-
-h1 {margin-bottom: 2em; }
-h2 {margin: 1.7411em 0 0 1rem; }
-h3 {margin: 1.5157em 0 0 1rem; }
-h4 {margin: 1.3195em 0 0 1rem; }
-h5 {margin: 1.1487em 0 0 1rem; }
-p {margin: 1em 0 0 1em}
-ul, ol {margin: 0.75rem 0 0 2rem; }
-li {margin: 0 0 0 1rem; line-height: 1.5}
-
-h1 + h2, h2 + h3 {margin: 0 0 0.75em 1rem;}
-
-ul + p {margin: 1rem 0 1rem 2rem;}
-
-ul + h3 {
-	margin-top: 4.5rem;
+h1 {
+  margin-bottom: 2em;
+}
+h2 {
+  margin: 1.7411em 0 0 1rem;
+}
+h3 {
+  margin: 1.5157em 0 0 1rem;
+}
+h4 {
+  margin: 1.3195em 0 0 1rem;
+}
+h5 {
+  margin: 1.1487em 0 0 1rem;
+}
+p {
+  margin: 1em 0 0 1em;
+}
+ul,
+ol {
+  margin: 0.75rem 0 0 2rem;
+}
+li {
+  margin: 0 0 0 1rem;
+  line-height: 1.5;
 }
 
-h3 + h4 {margin: 0 0 0 1rem;}
+h1 + h2,
+h2 + h3 {
+  margin: 0 0 0.75em 1rem;
+}
+
+ul + p {
+  margin: 1rem 0 1rem 2rem;
+}
+
+ul + h3 {
+  margin-top: 4.5rem;
+}
+
+h3 + h4 {
+  margin: 0 0 0 1rem;
+}
 
 h2 + p {
   margin: 0.75rem 0 1rem 1rem;
@@ -260,46 +300,46 @@ h2 + p {
 body,
 p,
 li,
-a { font-family: 'Ubuntu', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+a {
+  font-family: "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
-p { max-width: 70ch;}
+p {
+  max-width: 70ch;
+}
 
-header, footer {background-color: var(--zelinsky-blue); color: #ffffff; }
+header,
+footer {
+  background-color: var(--zelinsky-blue);
+  color: #ffffff;
+}
 
 nav ul li a:link {
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   text-decoration: none;
-  }
-
+}
 
 body.highres ul.pagination {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-  }
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
 
+body.highres ul.pagination li {
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid red;
+}
 
-   body.highres ul.pagination li {
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    margin: 0;
-    border: 1px solid red;
-  }
-
- 
 body.highres ul.pagination li.previous-page {
-    background-image: url("img/left-arrow.svg");
-    background-repeat: no-repeat;
-    border: 1px solid #444;
-  }
-
-
-
-
+  background-image: url("img/left-arrow.svg");
+  background-repeat: no-repeat;
+  border: 1px solid #444;
+}
 
 /* END DEFAULT STYLES FOR ALL VIEWPORT SIZES */
 
@@ -318,19 +358,34 @@ body.highres ul.pagination li.previous-page {
 
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  main {
+    width: 640px;
+    padding: 1em;
+    margin: 1em auto;
+  }
+
+  body.thumbs main {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: auto auto;
+    padding: 10px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  main {
+    width: 960px;
+  }
 
-  main {width: 960px; padding: 1em;  margin: 1em auto;}
+  body.thumbs main {
+    grid-template-columns: auto auto auto;
+  }
 
-  body.thumbs main {  
-    display: grid;  
-    grid-column-gap: 10px;  
-    grid-template-columns: auto auto;   
-    padding: 10px;  
-  } 
+  body.thumbs main figure {
+    border: 1px solid #444;
+  }
 
   #menu.primary-menu {
     display: flex;
@@ -340,11 +395,14 @@ body.highres ul.pagination li.previous-page {
     /* border: 1px solid red; */
     justify-content: flex-end;
   }
-
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+
+  body.thumbs main {
+    grid-template-columns: auto auto auto auto;
+  }
 }
 
 /* XX-Large devices (larger desktops, 1400px and up) */
