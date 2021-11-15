@@ -327,15 +327,6 @@ body.highres ul.pagination {
   justify-content: space-between;
 }
 
-<<<<<<< Updated upstream
-body.highres ul.pagination li {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  margin: 0;
-  border: 1px solid red;
-}
-=======
    body.highres ul.pagination li {
     text-indent: 100%;
     white-space: nowrap;
@@ -343,15 +334,8 @@ body.highres ul.pagination li {
     margin: 0;
     /* border: 1px solid red; */
   }
->>>>>>> Stashed changes
 
 body.highres ul.pagination li.previous-page {
-<<<<<<< Updated upstream
-  background-image: url("img/left-arrow.svg");
-  background-repeat: no-repeat;
-  border: 1px solid #444;
-}
-=======
     background-image: url("img/left-arrow.svg");
     background-repeat: no-repeat;
     /* border: 1px solid #444; */
@@ -363,7 +347,6 @@ body.highres ul.pagination li.previous-page {
 
 
 
->>>>>>> Stashed changes
 
 /* END DEFAULT STYLES FOR ALL VIEWPORT SIZES */
 
