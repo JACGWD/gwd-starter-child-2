@@ -7,10 +7,10 @@ if (!defined('ABSPATH'))
 ?>
 
 <!doctype html>
-<html <?php language_attributes(); ?> class="no-js">
+<html <?php language_attributes(); ?>  class="no-js">
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <!-- **************** GET HEADER********************* -->
@@ -30,22 +30,6 @@ if (!defined('ABSPATH'))
 <header>
 
 <?php get_search_form(); ?>
-
-<nav class="primary-navigation">
-<button aria-expanded="false" aria-controls="menu" class="hide-text">Menu</button>
-
-<?php
-  wp_nav_menu(array(
-	'menu_class'	  	=> 'primary-menu',
-	'theme_location' 	=> 'header-menu',
-	'menu_id'	    		=> 'menu',
-  'container'       => 'div',
-	'container_id'		=> 'menu-container',
-  'menu_aria_label' => 'hidden'
-));
-?>
-</nav>
-
 
 <div id="branding">
     <?php 
@@ -73,7 +57,25 @@ if (!defined('ABSPATH'))
   </div>
   <!-- END BRANDING -->
   
-    
+
+
+  <?php // ADD NAVIGATION ?>
+
+<nav class="primary-navigation">
+<button aria-expanded="false" aria-controls="menu" class="hide-text">Menu</button>
+
+<?php
+  wp_nav_menu(array(
+	'menu_class'	  	=> 'primary-menu',
+	'theme_location' 	=> 'header-menu',
+	'menu_id'	    		=> 'menu',
+  'container'       => 'div',
+	'container_id'		=> 'menu-container',
+));
+?>
+</nav>
+
+  
 
 </header> 
 <!--- HEADER ENDS HERE -----> 
