@@ -332,17 +332,29 @@ body.highres ul.pagination {
     white-space: nowrap;
     overflow: hidden;
     margin: 0;
-    /* border: 1px solid red; */
+    background-repeat: no-repeat;
+    background-size: contain;
   }
 
 body.highres ul.pagination li.previous-page {
     background-image: url("img/left-arrow.svg");
-    background-repeat: no-repeat;
-    /* border: 1px solid #444; */
+    background-position-x: left;
+  }
+
+  body.highres ul.pagination li.up-to-gallery {
+    background-image: url("img/up-arrow.svg");
+    background-position-x: center;
+  }
+
+  body.highres ul.pagination li.next-page {
+    background-image: url("img/right-arrow.svg");
+    background-position-x: right;
   }
 
   body.highres ul.pagination li a {
     display: block;
+    height: 100%;
+    width: 100%;
   }
 
 
