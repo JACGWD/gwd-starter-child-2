@@ -357,7 +357,63 @@ body.highres ul.pagination li.previous-page {
     width: 100%;
   }
 
+  #share-buttons {
+  margin: 1rem 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  }
 
+  #share-buttons li {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  #share-buttons li.facebook {
+    background-image: url("img/facebook.svg");
+    background-position-x: center; 
+  }
+
+  #share-buttons li.twitter {
+    background-image: url("img/twitter.svg");
+    background-position-x: center; 
+  }
+
+  #share-buttons li.digg {
+    background-image: url("img/twitter.svg");
+    background-position-x: center; 
+  }
+
+  #share-buttons li.reddit {
+    background-image: url("img/reddit.svg");
+    background-position-x: center; 
+  }
+
+  #share-buttons li.linkedin {
+    background-image: url("img/linkedin.svg");
+    background-position-x: center; 
+  }
+
+  #share-buttons li.pinterest {
+    background-image: url("img/pinterest.svg");
+    background-position-x: center; 
+  }
+
+  #share-buttons li.email {
+    background-image: url("img/email.svg");
+    background-position-x: center; 
+  }
+
+
+  #share-buttons li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
 
 
 /* END DEFAULT STYLES FOR ALL VIEWPORT SIZES */
