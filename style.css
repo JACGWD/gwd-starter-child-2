@@ -162,9 +162,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --titles-color: #1c0263;
   --bodytext-color: #444444;
 
-  --zelinsky-blue: #274c77;
-  --zelinsky-pale-blue: #6096ba;
-  --zelinsky-palest-blue: #a3cef1;
+  --blue: #274c77;
+  --pale-blue: #6096ba;
+  --palest-blue: #a3cef1;
 }
 
 /* END COLOR PALETTE */
@@ -203,6 +203,32 @@ header, footer {padding: 1rem;}
 	width: 10em;
 	padding: 0.5em;
 	z-index: 10;
+  background-color: var(--pale-blue);
+}
+
+nav.primary-navigation button {
+	height: 32px;
+	width: 32px;
+	display: block;
+	background-image: url(img/hamburger.svg);
+	background-size: contain;
+	background-color: #fff;
+	cursor: pointer;
+	border: 2px solid #ffffff;
+}
+
+
+#branding {
+	display: flex;
+	border: 1px solid #fff;
+	white-space: no-wrap;
+	height: 7.2em;
+	align-items: center;
+}
+
+#menu.primary-menu.show-nav li {
+	margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -328,7 +354,7 @@ p {
 
 header,
 footer {
-  background-color: var(--zelinsky-blue);
+  background-color: var(--blue);
   color: #ffffff;
 }
 
