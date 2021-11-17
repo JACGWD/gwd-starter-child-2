@@ -206,16 +206,6 @@ header, footer {padding: 1rem;}
   background-color: var(--pale-blue);
 }
 
-nav.primary-navigation button {
-	height: 32px;
-	width: 32px;
-	display: block;
-	background-image: url(img/hamburger.svg);
-	background-size: contain;
-	background-color: #fff;
-	cursor: pointer;
-	border: 2px solid #ffffff;
-}
 
 
 #branding {
@@ -229,6 +219,14 @@ nav.primary-navigation button {
 #menu.primary-menu.show-nav li {
 	margin: 0;
   padding: 0;
+}
+
+.brand-texts a {
+	font-family: "Titillium Web Bold", Ubuntu, Helvetica;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.4em;
+	font-weight: bold;
 }
 
 h1,
