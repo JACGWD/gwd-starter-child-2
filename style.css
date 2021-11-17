@@ -188,6 +188,23 @@ body {
   /* background-image: url("img/twitter.svg"); */
 }
 
+header, footer {padding: 1rem;}
+
+.header-nav-search {
+	display: flex;
+	justify-content: space-between;
+}
+
+#menu.primary-menu.show-nav {
+	position: absolute;
+	top: -12px;
+	/* border: 1px solid red; */
+	right: 0;
+	width: 10em;
+	padding: 0.5em;
+	z-index: 10;
+}
+
 h1,
 h2,
 h3,
@@ -334,6 +351,7 @@ body.highres ul.pagination {
     margin: 0;
     background-repeat: no-repeat;
     background-size: contain;
+    width: 33.333%;
   }
 
 body.highres ul.pagination li.previous-page {
@@ -371,6 +389,7 @@ body.highres ul.pagination li.previous-page {
     margin: 0;
     background-repeat: no-repeat;
     background-size: contain;
+    width: 14.28571429%;
   }
 
   #share-buttons li.facebook {
