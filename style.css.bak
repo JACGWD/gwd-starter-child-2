@@ -165,11 +165,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --blue: #274c77;
   --pale-blue: #6096ba;
   --palest-blue: #a3cef1;
-
-  --link: #ffffff;
-  --visited: #6d6d6d;
-  --hover: #a7a7a7;
-  --active: #fd7d93;
 }
 
 /* END COLOR PALETTE */
@@ -195,43 +190,36 @@ body {
 
 header, footer {padding: 1rem;}
 
- .header-nav-search {
+.header-nav-search {
 	display: flex;
 	justify-content: space-between;
-} 
+}
+
+#menu.primary-menu.show-nav {
+	position: absolute;
+	top: -12px;
+	/* border: 1px solid red; */
+	right: 0;
+	width: 10em;
+	padding: 0.5em;
+	z-index: 10;
+  background-color: var(--pale-blue);
+}
 
 
 
-
- #branding {
+#branding {
 	display: flex;
-	white-space: nowrap;
+	/* border: 1px solid #fff; */
+	white-space: no-wrap;
 	height: 7.2em;
 	align-items: center;
-} 
-
-
-
-/* ======================= START BASIC NAVIGATION FUNCTIONALITY =================================== */
-
-nav ul {list-style-type: none;}
-/* Hide menu bullets by default */
-
-
-button {
-  padding: 0 !important;
 }
-/* Remove default browser button styles to properly 
-enable text-indent: 100% in .hide-text image replacement */
 
-
-
-html.no-js nav.primary-navigation ul#menu {
-  display: block !important;
+#menu.primary-menu.show-nav li {
+	margin: 0;
+  padding: 0;
 }
-/* Force show main menu if javascript is turned off in the browser */
-
-
 
 .brand-texts a {
 	font-family: "Titillium Web Bold", Ubuntu, Helvetica;
@@ -240,81 +228,39 @@ html.no-js nav.primary-navigation ul#menu {
 	font-size: 1.4em;
 	font-weight: bold;
 }
-/* the site title and description in the branding div */
 
-
-ul#menu {
-  /* display: none; */
-}
-/* Hide drop down menu by default when page loads */
-
-/* .primary-navigation {  border: 2px dashed yellow;} */
-
-ul#menu.show-nav {
-  display: block !important;
-  /* border: 2px dashed red; */
-}
-/* class that javascript adds to force the navigation to display  */
-
-
-#menu.primary-menu.show-nav {
-	position: absolute;
-	top: 82px;
-	right: 15px;
-	width: 10em;
-	padding: 0.5em;
-	z-index: 10;
-  background-color: var(--pale-blue);
-}
-/* position the drop down menu when it displays */
-
-
-#menu.primary-menu.show-nav li {
-	margin: 0;
-  padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: var(--titles-color);
+  font-weight: bold;
 }
 
-
-/* ======================= END BASIC NAVIGATION FUNCTIONALITY =================================== */
-
-
-
-
-/* ======================= START LOVE HA RULE =================================== */
-
-nav ul li a:link {
-  color: var(--link);
-  text-decoration: none;
+main ul {
+  list-style-position: inside;
+  list-style-type: none;
 }
 
-nav ul li a:visited {
-  color: var(--visited);
+main ul li::before {
+  display: block;
+  width: 1.5em;
+  position: absolute;
+  left: -1.5em;
+  background-image: url(img/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 1em;
+  content: " ";
+  top: 0.125em;
 }
 
-nav ul li a:hover {
-  color:var(--hover);
-  text-decoration: underline;
-}
+main figure img {min-width: 100%; height: auto;}
 
-nav ul li a:active {
-  color: var(--active);
-  background-color: var(--main-fg-color);
-  padding: 0.25rem;
-}
-
-
-
-/* ======================= END START LOVE HA RULE =================================== */
-
-
-
-
-
-
-
-
-
-/* ============================== START TYPOGRAPHY ========================= */
+/* ul {list-style-image: url("img/twitter.svg"); }  */
 
 /* Classic Typographic Scale https://spencermortensen.com/articles/typographic-scale/  */
 
@@ -410,45 +356,10 @@ footer {
   color: #ffffff;
 }
 
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: var(--titles-color);
-  font-weight: bold;
+nav ul li a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
 }
-
-main ul {
-  list-style-position: inside;
-  list-style-type: none;
-}
-
-main ul li::before {
-  display: block;
-  width: 1.5em;
-  position: absolute;
-  left: -1.5em;
-  background-image: url(img/arrow.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 1em;
-  content: " ";
-  top: 0.125em;
-}
-
-/* ============================== END TYPOGRAPHY ========================= */
-
-
-
-
-
-  /* ============================== START HIGH RES PAGINATION BUTTONS ========================= */
-
 
 body.highres ul.pagination {
   margin: 0;
@@ -488,11 +399,6 @@ body.highres ul.pagination li.previous-page {
     width: 100%;
   }
 
-  /* ============================== END HIGH RES PAGINATION BUTTONS ========================= */
-
-
-
-  /* ============================== START SHARING BUTTONS ========================= */
   #share-buttons {
   margin: 1rem 0 0 0;
   padding: 0;
@@ -553,61 +459,23 @@ body.highres ul.pagination li.previous-page {
   }
 
 
-  /* ============================== END SHARING BUTTONS ========================= */
-
-
-
-  main {
-    padding: 1em;
-  }
-
-  body.thumbs figure {
-    margin: 0 auto 3em auto;
-    border: 1px dashed red;
-    max-width: 400px; /* resolution = width */
-  }
-
-
-
-
 /* END DEFAULT STYLES FOR ALL VIEWPORT SIZES */
-
 
 /* --------------------------------------
    MEDIA QUERIES FOR LARGER VIEWPORTS
------------------------------------------ */   
+----------------------------------------- */
 
 /* No media query for "extra small" since this is the default  
    The following media query sizes are taken from Bootstrap 5
    See: https://getbootstrap.com/docs/5.1/layout/breakpoints/
-   and: https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
 */
 
-
-
-/* 
-SMALL DEVICES (LANDSCAPE PHONES, 576PX AND UP) 
-MOBILE DEVICES ARE USUALLY RETINA DISPLAY, SO USE 2X IMAGES
-USE EITHER LANDSCAPE OR PORTRAIT IMAGES
-*/
-
-@media only screen and (min-width: 576px) { 
-  /* all screens */
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
 }
 
-@media only screen and (min-width: 576px) and (orientation: portrait) { 
-/* portrait screens */
-}
-
-@media only screen and (min-width: 576px) and (orientation: landscape) {
-/* landscape screens */
-}
-
-
-
-
-/* MEDIUM DEVICES (TABLETS, 768PX AND UP) */
-@media only screen and (min-width: 768px) {
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
 
   main {
     width: 640px;
@@ -623,111 +491,38 @@ USE EITHER LANDSCAPE OR PORTRAIT IMAGES
   }
 }
 
-@media only screen and (min-width: 768px) and (orientation: portrait) {
-  /* portrait screens */
-}
-
-@media only screen and (min-width: 768px) and (orientation: landscape) {
-  /* landscape screens */
-}
-
-
-
-/* LAPTOPS AND DESKTOPS CAN BE REGULAR OR RETINA DISPLAY  */
-
-
-@media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 1) {
-
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
   main {
     width: 960px;
   }
-  
+
   body.thumbs main {
     grid-template-columns: auto auto auto;
   }
-  
+
   body.thumbs main figure {
     border: 1px solid #444;
   }
-  
-}
 
-@media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-/* Retina screens */
-}
-
-
-
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-/* all screens */
-body.thumbs main {
-  width: 85%;
-  grid-template-columns: auto auto auto auto;
-}
-}
-
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 1) {
-/* regular screens */
-}
-
-@media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-/* Retina screens */
-}
-
-
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-  
-  body.thumbs main {
-    width: 1200px;
-
+  #menu.primary-menu {
+    display: flex;
+    flex-direction: row;
+    padding: 0 1em;
+    align-items: flex-end;
+    /* border: 1px solid red; */
+    justify-content: flex-end;
   }
 }
 
-@media (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 1) {
-/* regular screens */
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+  body.thumbs main {
+    grid-template-columns: auto auto auto auto;
+  }
 }
 
-@media (min-width: 1400px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-/* Retina screens */
-}
-
-
-
-/*
-OLD SCHOOL IMAGE REPLACEMENT TECHNIQUE
-.HIDE-TEXT FOR IMAGE REPLACEMENTS
-SEE: HTTP://WWW.ZELDMAN.COM/2012/03/01/REPLACING-THE-9999PX-HACK-NEW-IMAGE-REPLACEMENT/
-*/
-.hide-text {
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
-
-/*
-* CLEARFIX: CONTAIN FLOATS
-*
-* For modern browsers
-* 1. The space content is one way to avoid an Opera bug when the
-*    `contenteditable` attribute is included anywhere else in the document.
-*    Otherwise it causes space to appear at the top and bottom of elements
-*    that receive the `clearfix` class.
-* 2. The use of `table` rather than `block` is only necessary if using
-*    `:before` to contain the top-margins of child elements.
-*/
-.clearfix:before,
-.clearfix:after {
-content: " ";
-/* 1 */
-display: table;
-/* 2 */
-}
-
-.clearfix:after {
-clear: both;
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
 }
